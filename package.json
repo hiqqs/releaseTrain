@@ -1,6 +1,6 @@
 {
   "name": "releasetrain",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A helper package to improve your CICD workflow and node.js app release process, seek no more with releaseTrain!",
   "main": "index.js",
   "repository": {
