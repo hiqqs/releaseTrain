@@ -1,0 +1,28 @@
+{
+  "name": "releasetrain",
+  "version": "1.1.0",
+  "description": "A helper package to improve your CICD workflow and node.js app release process, seek no more with releaseTrain!",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnhiggs/releaseTrain.git"
+  },
+  "author": "John Ahigian <higgs.designs@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "releaseTrain-cut": "git checkout -b RC-$npm_config_releaseVersion && git push -u origin RC-$npm_config_releaseVersion",
+    "releaseTrain-notify": "node scripts/releaseTrain-notify",
+    "releaseTrain-config": "node scripts/setConfig.js --appName=$npm_config_appName --hookUrl=$npm_config_hookUrl --channel=$npm_config_channel --username=$npm_config_username --releaseVersion=$npm_config_releaseVersion"
+  },
+  "dependencies": {
+    "fs-extra": "^9.1.0",
+    "jest": "^26.6.3",
+    "jsonfile": "^6.1.0",
+    "node-slack": "^0.0.7"
+  },
+  "bugs": {
+    "url": "https://github.com/johnhiggs/releaseTrain/issues"
+  },
+  "homepage": "https://github.com/johnhiggs/releaseTrain#readme",
+  "devDependencies": {}
+}
