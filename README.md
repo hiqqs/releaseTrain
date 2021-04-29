@@ -5,10 +5,11 @@ Auto cuts a branch based on current source of truth.
 Creates new branch (RC-version), sets upstream and pushes to origin
 Notifies via slack
 
-📦 [Install](#install)
-🚉 [Configure](#configure)
-🚂 [Set Configuration](#set-configuration)
-🚋 [Start the release train!](#start-the-release-train!)
+* 📦 [Install](#install)
+* 🚉 [Configure](#configure)
+* 🛤️ [Set Configuration](#set-configuration)
+* 🚂 [Start the release train!](#start-the-release-train!)
+* 🚋 [Notifications](#notifications)
 
 ### Install
 `npm add releasetrain`
@@ -40,4 +41,5 @@ Now you can run (pulls version from package.json)
 
 This will automatically push up a release train branch of `RC-*releaseVersion*`
 
+### Notifications
 You can call npm run `releaseTrain:notify` within your CI step to slack out the train has been cut!
