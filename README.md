@@ -1,2 +1,2 @@
 # 🚂🚃 releaseTrain 
-🛤️ A helper package to improve your CICD workflow and node.js app release process, seek no more with releaseTrain!
+🛤️ A node.js helper 📦 to improve your CICD workflow & app release process, fear no more with releaseTrain!
