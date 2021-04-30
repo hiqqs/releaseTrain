@@ -1,0 +1,22 @@
+# releaseTrain
+image: node:latest
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Trigger next step manually if you want to create a release candidate
+          script:
+            - echo "Develop branch, manually proceed the next pipeline to cut release candidate"
+      - step:
+          name: Optional, trigger release candidate branch
+          trigger: manual
+          script:
+            - npm install
+            - echo "{\"app\":{\"_\":[],\"releaseVersion\":\"$RELEASE_VERSION\"}}" >> ./node_modules/releasetrain/releaseVersion.json
+            - echo "#! /bin/bash" >> ./node_modules/releasetrain/releaseVersion.sh
+            - echo "releaseVersion=$RELEASE_VERSION" >> ./releaseVersion.sh
+            - echo "{\"configuration\":{\"_\":[],\"appName\":\"bitbucket\",\"hookUrl\":\"$SLACK_WEBHOOK_URL\",\"channel\":\"bitbucket\",\"username\":\"releaseTrain\"}}" >> ./node_modules/releasetrain/config.json
+            - /bin/bash ./node_modules/releasetrain/scripts/cutRelease.sh
+            - cd ./node_modules/releasetrain && npm run releaseTrain-notify
+          artifacts:
+            - node_modules/releasetrain/**
