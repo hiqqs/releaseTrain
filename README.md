@@ -7,14 +7,14 @@ Notifies via slack
 
 [<img src="https://img.shields.io/badge/slack-@releaseTrain-pink.svg?logo=slack">](https://join.slack.com/t/releasetrainworkspace/shared_invite/zt-pqcomcn7-f8N4LcP0YJ9ZqYWBmgA9RQ) 
 
-* 📦 [Install](#install)
-* * [npm](#npm)
-* * [yarn](#yarn)
-* ⚙️ [Info](#info)
-* 🚉 [CI Examples](#ci-examples)
-* * [Bitbucket Pipelines](#bitbucket-pipelines)
-* * [CircleCi](#circleci)
-* * [Github Actions](#github-actions)
+📦 [Install](#install)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:electron: [npm](#npm)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🧶 [yarn](#yarn)\
+ℹ️ [Info](#info)\
+🚉 [CI Examples](#ci-examples)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔵[Bitbucket Pipelines](#bitbucket-pipelines)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢[CircleCi](#circleci)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🚀[Github Actions](#github-actions)
 
 ### Install
 #### npm
