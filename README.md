@@ -5,7 +5,7 @@
 🚀 Creates new branch (RC-version), sets upstream and pushes to origin\
 📱 Sends Notification to desired channel via slack with release candidate information of the next train
 
-[<img src="https://img.shields.io/badge/slack-join-releaseTrain-pink.svg?logo=slack">](https://join.slack.com/t/releasetrainworkspace/shared_invite/zt-pqcomcn7-f8N4LcP0YJ9ZqYWBmgA9RQ) 
+[<img src="https://img.shields.io/badge/slack-join us in releaseTrain-pink.svg?logo=slack">](https://join.slack.com/t/releasetrainworkspace/shared_invite/zt-pqcomcn7-f8N4LcP0YJ9ZqYWBmgA9RQ) 
 
 📦 [Install](#install)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:electron: [npm](#npm)\
