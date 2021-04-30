@@ -40,9 +40,9 @@ These are they variables that releaseTrain uses and example how you could set th
 _ci examples are within the `./ci-examples` dir_
 
 The following CI environment variables are used for 🚂🚋 releaseTrain
-* `$SLACK_WEBHOOK_URL` _sends notification of release train to desired release channel you specify in the CI script configuration
-* `$RELEASE_VERSION` (Optional) _the release version that appends to `RC-` when creating the next release candidate train. 
-You could also just change the configuration to pass in whatever version you desire and not use the `$RELEASE_VERSION` env var.
+* `$SLACK_WEBHOOK_URL` _sends notification of release train to desired release channel you specify in the CI script configuration_
+* `$RELEASE_VERSION` _(Optional) the release version that appends to `RC-` when creating the next release candidate train
+You could also just change the configuration to pass in whatever version you desire and not use the `$RELEASE_VERSION` env var_
 
 #### Bitbucket Pipelines
 
