@@ -1,9 +1,9 @@
 # 🚂🚃 releaseTrain 
 🛤️ A node.js helper 📦 to improve your CICD pipeline & app release process, fear no more and bring on the releaseTrain!
 
-Auto cuts a branch based on current source of truth.
-Creates new branch (RC-version), sets upstream and pushes to origin
-Notifies via slack
+Auto cuts a branch based on current source of truth.\
+Creates new branch (RC-version), sets upstream and pushes to origin\
+Sends Notification to desired channel via slack with release candidate information of the next train
 
 [<img src="https://img.shields.io/badge/slack-@releaseTrain-pink.svg?logo=slack">](https://join.slack.com/t/releasetrainworkspace/shared_invite/zt-pqcomcn7-f8N4LcP0YJ9ZqYWBmgA9RQ) 
 
