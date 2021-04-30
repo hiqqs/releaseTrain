@@ -12,9 +12,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🧶 [yarn](#yarn)\
 ℹ️ [Info](#info)\
 🚉 [CI Examples](#ci-examples)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔵[Bitbucket Pipelines](#bitbucket-pipelines)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢[CircleCi](#circleci)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🚀[Github Actions](#github-actions)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔵&nbsp;[Bitbucket Pipelines](#bitbucket-pipelines)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢&nbsp;[CircleCi](#circleci)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🚀&nbsp;[Github Actions](#github-actions)
 
 ### Install
 #### npm
