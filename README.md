@@ -10,7 +10,7 @@
 📦 [Install](#install)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:electron: [npm](#npm)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🧶 [yarn](#yarn)\
-ℹ️ [Info](#info)\
+ℹ️ [Background](#background)\
 🚉 [CI Examples](#ci-examples)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔵&nbsp;[Bitbucket Pipelines](#bitbucket-pipelines)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢&nbsp;[CircleCi](#circleci)\
@@ -22,7 +22,9 @@
 #### yarn
 `yarn add releasetrain`
 
-### Info
+### Background
+Do you want to automate release candidates rather than manually cutting them everytime?  Perhaps just have an optional job in a CI pipeline you can just run to create a new release candidate?  Simply add release train with the `ci-examples` for yaml configurations.  It cuts a new branch with `RC-` (release candidate) prefix followed by the desired release version and sets upstream / pushes to origin.  It then sends out a slack notification to specified channel with information you can pass in a pipeline / action.
+
 These are they variables that releaseTrain uses and example how you could set them locally if desired in a shorthand script
 
 * appName: your app name (gets included in slack alert)
