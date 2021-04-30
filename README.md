@@ -5,6 +5,8 @@ Auto cuts a branch based on current source of truth.
 Creates new branch (RC-version), sets upstream and pushes to origin
 Notifies via slack
 
+[<img src="https://img.shields.io/badge/slack-@releaseTrain-pink.svg?logo=slack">](https://join.slack.com/t/releasetrainworkspace/shared_invite/zt-pqcomcn7-f8N4LcP0YJ9ZqYWBmgA9RQ) 
+
 * 📦 [Install](#install)
 * 🚉 [Configure](#configure)
 * 🛤️ [Set Configuration](#set-configuration)
