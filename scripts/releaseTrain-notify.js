@@ -1,8 +1,9 @@
 const Slack = require('node-slack');
 const fs = require('fs')
 const configData = JSON.parse(fs.readFileSync('./config.json'))
+const releaseTrain = JSON.parse(fs.readFileSync('./releaseVersion.json'))
 const appName = configData.configuration.appName;
-const releaseVersion = configData.configuration.releaseVersion;
+const releaseVersion = releaseTrain.app.releaseVersion;
 const channel = configData.configuration.channel;
 const username = configData.configuration.username;
 const slack = new Slack(configData.configuration.hookUrl);
