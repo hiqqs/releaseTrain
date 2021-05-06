@@ -1,7 +1,7 @@
 # 🚂🚃 releaseTrain 
 📦 node.js package to improve your CICD pipeline & app release process, fear no more and bring on the releaseTrain!
 
-🛤️ Auto cuts a branch based on current source of truth.\
+🛤️ Auto cuts a branch based on current source of truth\
 🚀 Creates new branch (RC-version), sets upstream and pushes to origin\
 📱 Sends Notification to desired channel via slack with release candidate information of the next train
 
@@ -20,7 +20,7 @@
 
 ### Install
 #### npm
-`npm add releasetrain`
+`npm install releasetrain`
 #### yarn
 `yarn add releasetrain`
 
