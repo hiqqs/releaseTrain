@@ -19,6 +19,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🚀&nbsp;[Github Actions](#github-actions)
 
 ### Install
+
+Node.js project?  You can add releaseTrain to your package json, but if you can simply install on the fly in CI.  See examples how to accomplish this in CI for any project
+
 #### npm
 `npm install releasetrain`
 #### yarn
