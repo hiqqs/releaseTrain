@@ -1,15 +1,16 @@
 # 🚂🚃 releaseTrain 
-📦 node.js package to improve your CICD pipeline & app release process, fear no more and bring on the releaseTrain!
-
-🛤️ Auto cuts a branch based on current source of truth\
-🚀 Creates new branch (RC-version), sets upstream and pushes to origin\
-📱 Sends Notification to desired channel via slack with release candidate information of the next train
-
+_to make any web, mobile, or microsvce release candidate branching process better_
+---
 [<img src="https://img.shields.io/badge/slack-join us in releaseTrain-red.svg?logo=slack&style=plastic">](https://join.slack.com/t/releasetrainworkspace/shared_invite/zt-pqcomcn7-f8N4LcP0YJ9ZqYWBmgA9RQ)
 [![NPM](https://img.shields.io/npm/v/releasetrain.svg?logo=npm&color=white&style=plastic)](https://www.npmjs.com/package/releasetrain)
 [![Downloads/week](https://img.shields.io/npm/dw/releasetrain.svg?logo=apache-rocketmq&color=gold&style=plastic)](https://www.npmjs.com/package/releasetrain)
+---
+🛤️ Auto cuts a branch based on current source of truth\
+🚀 Creates new branch (RC-version), sets upstream and pushes to origin\
+📱 Sends Notification to desired channel via slack with release candidate information of the next train\
+📦 Can be added to a node.js project or also used on any CICD for any codebase
 
-📦 [Install](#install)\
+⚙️ [Install](#install)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:electron: [npm](#npm)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🧶 [yarn](#yarn)\
 ℹ️ [Background](#background)\
