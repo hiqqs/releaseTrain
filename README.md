@@ -1,5 +1,5 @@
 # 🚂🚃 releaseTrain 
-_to make any web, mobile, or microsvce release candidate branching process better_
+_make every web, mobile app, and microsvce release candidate branching process more effective_
 ---
 [<img src="https://img.shields.io/badge/slack-join us in releaseTrain-red.svg?logo=slack&style=plastic">](https://join.slack.com/t/releasetrainworkspace/shared_invite/zt-pqcomcn7-f8N4LcP0YJ9ZqYWBmgA9RQ)
 [![NPM](https://img.shields.io/npm/v/releasetrain.svg?logo=npm&color=white&style=plastic)](https://www.npmjs.com/package/releasetrain)
