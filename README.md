@@ -85,4 +85,44 @@ pipelines:
 _coming soon_
 
 #### Github Actions
-_coming soon_
+
+`giithub-actions.yml`
+
+This example has an optional manually triggered flow that uses the `$RELEASE_VERSION` secrets var and creates a release candidate from main branch
+You need to also provide the `$SLACK_WEBHOOK_URL` as part of the repository secrets.  You can create a slack app or add an incoming webhook to your slack via administration this example is not for that.  Under Actions settings you need to allow GHA workflows read and write permission to allow Github Actions bot to be able to perform admin git operations such as automatically push up a new RC-*** branch used by releaseTrain operations.
+
+```
+name: Release Train example for Github Actions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    - name: Install dependencies
+      run: npm install -g yarn && yarn
+    - name: Set the Release Version
+      run: |
+        echo "{\"app\":{\"_\":[],\"releaseVersion\":\"$RELEASE_VERSION\"}}" >> ./node_modules/releasetrain/releaseVersion.json
+        echo "#! /bin/bash" >> ./node_modules/releasetrain/releaseVersion.sh
+        echo "releaseVersion=$RELEASE_VERSION" >> ./releaseVersion.sh
+        echo "{\"configuration\":{\"_\":[],\"appName\":\"Github Actions\",\"hookUrl\":\"$SLACK_WEBHOOK_URL\",\"channel\":\"github-actions-example\",\"username\":\"releaseTrain\"}}" >> ./node_modules/releasetrain/config.json
+        /bin/bash ./node_modules/releasetrain/scripts/cutRelease.sh
+        cd ./node_modules/releasetrain && npm run releaseTrain-notify
+      env:
+        RELEASE_VERSION: ${{ secrets.RELEASE_VERSION }}
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    - uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: releasetrain
+        path: node_modules/releasetrain/**
+        retention-days: 30
+```
