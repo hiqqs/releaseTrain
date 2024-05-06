@@ -16,6 +16,7 @@ jobs:
       run: npm install -g yarn && yarn
     - name: Set the Release Version
       run: |
+        echo "{\"app\":{\"_\":[],\"releaseVersion\":\"$RELEASE_VERSION\"}}" >> ./releaseVersion.json
         yarn releaseTrain-config --appName=releaseTrain --hookUrl=$SLACK_WEBHOOK_URL --channel=github-actions-example --username=releaseTrain --releaseVersion=$npm_package_version
         echo "#! /bin/bash" >> ./releaseVersion.sh
         echo "releaseVersion=$RELEASE_VERSION" >> ./releaseVersion.sh
