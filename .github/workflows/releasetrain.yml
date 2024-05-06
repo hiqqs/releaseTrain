@@ -16,18 +16,18 @@ jobs:
       run: npm install -g yarn && yarn
     - name: Set the Release Version
       run: |
-        echo "{\"app\":{\"_\":[],\"releaseVersion\":\"$RELEASE_VERSION\"}}" >> ./node_modules/releasetrain/releaseVersion.json
-        echo "#! /bin/bash" >> ./node_modules/releasetrain/releaseVersion.sh
+        echo "{\"app\":{\"_\":[],\"releaseVersion\":\"$RELEASE_VERSION\"}}" >> ./releaseVersion.json
+        echo "#! /bin/bash" >> ./releaseVersion.sh
         echo "releaseVersion=$RELEASE_VERSION" >> ./releaseVersion.sh
-        echo "{\"configuration\":{\"_\":[],\"appName\":\"Github Actions\",\"hookUrl\":\"$SLACK_WEBHOOK_URL\",\"channel\":\"github-actions-example\",\"username\":\"releaseTrain\"}}" >> ./node_modules/releasetrain/config.json
-        /bin/bash ./node_modules/releasetrain/scripts/cutRelease.sh
-        cd ./node_modules/releasetrain && npm run releaseTrain-notify
+        echo "{\"configuration\":{\"_\":[],\"appName\":\"Github Actions\",\"hookUrl\":\"$SLACK_WEBHOOK_URL\",\"channel\":\"github-actions-example\",\"username\":\"releaseTrain\"}}" >> ./config.json
+        /bin/bash ./scripts/cutRelease.sh
+        yarn releaseTrain-notify
       env:
         RELEASE_VERSION: ${{ secrets.RELEASE_VERSION }}
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     - uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: releasetrain
-        path: node_modules/releasetrain/**
+        name: releaseTrain
+        path: ./**
         retention-days: 30
