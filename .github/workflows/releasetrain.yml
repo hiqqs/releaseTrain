@@ -22,7 +22,6 @@ jobs:
         echo "{\"configuration\":{\"_\":[],\"appName\":\"Github Actions\",\"hookUrl\":\"$SLACK_WEBHOOK_URL\",\"channel\":\"github-actions-example\",\"username\":\"releaseTrain\"}}" >> ./config.json
         /bin/bash ./scripts/cutRelease.sh
         yarn releaseTrain-notify
-        cat config.json
       env:
         RELEASE_VERSION: ${{ secrets.RELEASE_VERSION }}
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
