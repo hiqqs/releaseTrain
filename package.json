@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnhiggs/releaseTrain.git"
+    "url": "git+https://github.com/hiqqs/releaseTrain.git"
   },
   "author": "John Ahigian <higgs.designs@gmail.com>",
   "license": "MIT",
