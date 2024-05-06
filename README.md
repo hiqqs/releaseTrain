@@ -89,7 +89,7 @@ _coming soon_
 `giithub-actions.yml`
 
 This example has an optional manually triggered flow that uses the `$RELEASE_VERSION` secrets var and creates a release candidate from main branch
-You need to also provide the `$SLACK_WEBHOOK_URL` as part of the repository secrets.  You can create a slack app or add an incoming webhook to your slack via administration this example is not for that.  Under Actions settings you need to allow GHA workflows read and write permission to allow Github Actions bot to be able to perform admin git operations such as automatically push up a new RC-*** branch used by releaseTrain operations.
+You need to also provide the `$SLACK_WEBHOOK_URL` as part of the repository secrets.  You can create a slack app or add an incoming webhook to your slack via administration this example is not for that.  Under Actions settings for your repository you need to allow GHA workflows read and write permission to allow Github Actions bot to be able to perform admin git operations such as automatically push up a new RC-*** branch used by releaseTrain operations.
 
 ```
 name: Release Train example for Github Actions
