@@ -22,6 +22,7 @@ jobs:
         echo "releaseVersion=$RELEASE_VERSION" >> ./releaseVersion.sh
         /bin/bash ./scripts/cutRelease.sh
         yarn releaseTrain-notify
+        cat config.json
       env:
         RELEASE_VERSION: ${{ secrets.RELEASE_VERSION }}
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -29,5 +30,5 @@ jobs:
       if: always()
       with:
         name: releasetrain
-        path: node_modules/releasetrain/**
+        path: releasetrain/**
         retention-days: 30
