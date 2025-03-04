@@ -19,7 +19,7 @@ _all aboard the automated release candidate branching process train_
 
 ### Install
 
-Node.js project?  You can add releaseTrain to your package json, but if you can simply install on the fly in CI.  See examples how to accomplish this in CI for any project
+Node.js project?  You can add releaseTrain to your package json, or you can simply install on the fly in CI.  See examples how to accomplish this in CI for any project
 
 #### npm
 `npm install releasetrain`
